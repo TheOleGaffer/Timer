@@ -25,15 +25,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationWillTerminate(aNotification: NSNotification) {
         // Insert code here to tear down your application
     }
-//        override func  validateMenuItem(menuItem: NSMenuItem) -> Bool {
-//        if(menuItem == startMenuItem){
-//            return !timer!.running
-//        }
-//        else if(menuItem == stopMenuItem){
-//            return timer!.running
-//        }
-//        return true
-//    }
+
     @IBAction func newTimerWindow(sender: AnyObject) {
         let timerWindow = TimerWindowController()
         timerWindows.append(timerWindow)
